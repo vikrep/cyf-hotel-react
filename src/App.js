@@ -6,11 +6,12 @@ import SpecialDeals from './SpecialDeals.js';
 
 class App extends Component {
   render() {
+    const deals = ["Earlier booking -20%", "Every 10 days -10%", "Breakfast is free"];
     return (
       <div className="App">
-        <Logo />
+        <Logo logohotel = "CYF Hotel" />
         <BookingsMessage />
-        <SpecialDeals />
+        <SpecialDeals spdeal = {deals} />
       </div>
     );
   };
